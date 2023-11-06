@@ -1,16 +1,16 @@
-# This is a sample Python script.
+from params import *
+from funcs import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+faculty = Faculty()
 
+faculty.load_faculty_info()
+faculty.load_pub_info()
+faculty.load_faculty_pub()
+faculty.visualize()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# faculty_df = faculty.scrape_info(save=True)
+# faculty.get_pubs()
+# faculty.combine_data()
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# faculty.retrieve_author_id(author_firstname="Mark", author_lastname="Rowe")
+print("Done!")
