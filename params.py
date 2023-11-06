@@ -17,7 +17,6 @@ from pybliometrics.scopus import AuthorRetrieval, AuthorSearch, ScopusSearch
 from fuzzywuzzy import fuzz, process
 import fuzzy_pandas as fpd
 
-elsevier_api = "56c3e3d5fb457e38161b03b4cdcbdb82"
 faculty_url = "https://www.ohio.edu/business/about/faculty-staff"
 departments = ["Analytics and Information Systems Faculty",
                "Finance Faculty",
